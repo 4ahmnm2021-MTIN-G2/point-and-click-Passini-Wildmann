@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
                 playerPos = hit.point;
         }
+        if (Input.GetMouseButton(0))
+        {
+
+        }
+            ;
         
             
             this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos, speed);
